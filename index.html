@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Audio Player</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+  </head>
+  
+<body>
+  <div>
+    <input type="text" id="search-keyword" placeholder="Enter keyword">
+    <button id="search-button">Search</button>
+  </div>
+  
+  <ul id="search-results"></ul>
+  
+  <div>
+    <button id="play-button" disabled>Play</button>
+    <button id="pause-button" disabled>Pause</button>
+    <button id="loop-button" disabled>Loop: Off</button>
+    <button id="next-button" disabled>Next</button>
+  
+    <input type="range" id="volume-control" disabled min="0" max="100" value="50">
+    <label for="volume-control">Volume</label>
+  
+    <input type="range" id="seek-bar" min="0" max="0" value="0">
+    <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+  </div>
+  
+  <div id="youtube-player"></div>
+  
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="app.js"></script>
+</body>
+</html>
