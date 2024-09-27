@@ -16,21 +16,25 @@
   <ul id="search-results"></ul>
   
   <div>
-    <button id="play-button" disabled>Play</button>
-    <button id="pause-button" disabled>Pause</button>
-    <button id="loop-button" disabled>Loop: Off</button>
-    <button id="next-button" disabled>Next</button>
-  
-    <input type="range" id="volume-control" disabled min="0" max="100" value="50">
-    <label for="volume-control">Volume</label>
-  
-    <input type="range" id="seek-bar" min="0" max="0" value="0">
-    <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+    <img id="video-thumbnail" src="" alt="Video Thumbnail" style="width: 200px; height: auto; margin-top: 10px;" />
+    <p id="video-title" style="font-weight: bold; margin-top: 10px;"></p>
+    <div>
+      <button id="previous-button" disabled>Previous</button> <!-- New Previous button -->
+      <button id="play-button" disabled>Play</button>
+      <button id="pause-button" disabled>Pause</button>
+      <button id="loop-button" disabled>Loop: Off</button>
+      <button id="next-button" disabled>Next</button>
+    
+      <input type="range" id="volume-control" disabled min="0" max="100" value="50">
+      <label for="volume-control">Volume</label>
+    
+      <input type="range" id="seek-bar" min="0" max="0" value="0">
+      <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+    </div>
   </div>
   
   <div id="youtube-player"></div>
   
-
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="app.js"></script>
 </body>
